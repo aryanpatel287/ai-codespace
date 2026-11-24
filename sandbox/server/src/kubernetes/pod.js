@@ -48,9 +48,9 @@ export async function createPod(sandboxId) {
                     ],
                 },
                 {
-                    image: 'agent',
+                    image: 'sync-agent',
                     imagePullPolicy: 'IfNotPresent',
-                    name: 'agent-container',
+                    name: 'sync-agent-container',
                     ports: [{ containerPort: 3000, name: 'http' }],
                     resources: {
                         limits: { cpu: '500m', memory: '1Gi' },
