@@ -16,6 +16,12 @@ spec:
     spec:
       containers:
       - image:  ai-agent
+        env:
+          - name:  GEMINI_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name:  gemini-secret
+                key:  GEMINI_API_KEY
         name:  ai-agent
         resources:
           requests:

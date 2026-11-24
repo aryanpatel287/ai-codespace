@@ -9,7 +9,7 @@ export const listFiles = tool(
         console.log('==============================================');
 
         const response = await axios.get(
-            'http://01a207a9-9e7c-7656-98bc-ee57970d30fd.agent.localhost/api/list-files',
+            'http://sandbox-service-01a20d4e-5c33-77fc-a408-07f459707090:3000/api/list-files',
         );
 
         console.log('==============================================');
@@ -31,7 +31,7 @@ export const readFiles = tool(
         console.log('==============================================');
 
         const response = await axios.get(
-            `http://01a207a9-9e7c-7656-98bc-ee57970d30fd.agent.localhost/api/read-files?files=${files.join(',')}`,
+            `http://sandbox-service-01a20d4e-5c33-77fc-a408-07f459707090:3000/api/read-files?files=${files.join(',')}`,
         );
 
         console.log('==============================================');
@@ -56,7 +56,7 @@ export const updateFiles = tool(
         console.log('==============================================');
 
         const response = await axios.patch(
-            'http://01a207a9-9e7c-7656-98bc-ee57970d30fd.agent.localhost/api/update-files',
+            'http://sandbox-service-01a20d4e-5c33-77fc-a408-07f459707090:3000/api/update-files',
             { files },
         );
 
@@ -87,7 +87,7 @@ export const createFiles = tool(
         console.log('==============================================');
 
         const response = await axios.post(
-            'http://01a207a9-9e7c-7656-98bc-ee57970d30fd.agent.localhost/api/create-files',
+            'http://sandbox-service-01a20d4e-5c33-77fc-a408-07f459707090:3000/api/create-files',
             { files },
         );
 
