@@ -4,7 +4,7 @@ metadata:
   name:  router-service
 spec:
   selector:
-    app:  router
+    app:  sandbox-router
   type:  ClusterIP 
   ports:
   - name: http

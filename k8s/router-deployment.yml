@@ -8,15 +8,15 @@ spec:
     replicas: 1
     selector:
         matchLabels:
-            app: router
+            app: sandbox-router
     template:
         metadata:
             labels:
-                app: router
+                app: sandbox-router
         spec:
             containers:
-                - image: router:v1.2
-                  name: router
+                - image: sandbox-router
+                  name: sandbox-router
                   resources:
                       limits:
                           cpu: '500m'
